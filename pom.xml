@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>se.uu.ub.cora</groupId>
+        <artifactId>cora-parent</artifactId>
+        <version>1.1.1</version>
+    </parent>
+
+    <artifactId>batchrunner</artifactId>
+    <version>0.1-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+
+    <name>Batchrunner</name>
+
+    <properties>
+        <json.version>2.1.0</json.version>
+        <httphandler.version>2.0.0</httphandler.version>
+        <spider.version>3.13.0</spider.version>
+        <cora-clientdata.version>3.5.0</cora-clientdata.version>
+        <storage.version>3.6.0</storage.version>
+        <javaclient.version>1.8-SNAPSHOT</javaclient.version>
+        <javax.ws.rs.version>2.0.1</javax.ws.rs.version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>se.uu.ub.cora</groupId>
+            <artifactId>json</artifactId>
+            <version>${json.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>se.uu.ub.cora</groupId>
+            <artifactId>httphandler</artifactId>
+            <version>${httphandler.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>se.uu.ub.cora</groupId>
+            <artifactId>spider</artifactId>
+            <version>${spider.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>se.uu.ub.cora</groupId>
+            <artifactId>cora-clientdata</artifactId>
+            <version>${cora-clientdata.version}</version>
+            <scope>compile</scope>
+        </dependency>
+       <dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>storage</artifactId>
+			<version>${storage.version}</version>
+			<scope>provided</scope>
+		</dependency>
+        <dependency>
+			<groupId>se.uu.ub.cora</groupId>
+			<artifactId>javaclient</artifactId>
+			<version>${javaclient.version}</version>
+			<scope>compile</scope>
+		</dependency>
+        <dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<version>${javax.ws.rs.version}</version>
+			<scope>compile</scope>
+		</dependency>
+    </dependencies>
+
+
+</project>
