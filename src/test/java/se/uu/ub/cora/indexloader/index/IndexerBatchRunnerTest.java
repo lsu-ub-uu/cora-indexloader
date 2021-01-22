@@ -47,8 +47,8 @@ public class IndexerBatchRunnerTest {
 			IllegalAccessException, InvocationTargetException, InstantiationException {
 		String args[] = new String[] { "someAuthToken", "appTokenVerifierUrl",
 				"http://localhost:8080/therest/rest/record/",
-				"se.uu.ub.cora.batchrunner.CoraClientFactorySpy",
-				"se.uu.ub.cora.batchrunner.index.DataIndexerSpy", "someRecordType" };
+				"se.uu.ub.cora.indexloader.CoraClientFactorySpy",
+				"se.uu.ub.cora.indexloader.index.DataIndexerSpy", "someRecordType" };
 
 		IndexerBatchRunner.main(args);
 		CoraClientFactorySpy coraClientFactory = (CoraClientFactorySpy) IndexerBatchRunner.coraClientFactory;
