@@ -16,7 +16,7 @@
  *     You should have received a copy of the GNU General Public License
  *     along with Cora.  If not, see <http://www.gnu.org/licenses/>.
  */
-package se.uu.ub.cora.batchrunner.index;
+package se.uu.ub.cora.indexloader.index;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertSame;
@@ -28,7 +28,7 @@ import java.lang.reflect.Modifier;
 
 import org.testng.annotations.Test;
 
-import se.uu.ub.cora.batchrunner.CoraClientFactorySpy;
+import se.uu.ub.cora.indexloader.CoraClientFactorySpy;
 
 public class IndexerBatchRunnerTest {
 

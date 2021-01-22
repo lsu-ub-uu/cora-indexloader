@@ -1,4 +1,4 @@
-package se.uu.ub.cora.batchrunner.index;
+package se.uu.ub.cora.indexloader.index;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertSame;
@@ -8,8 +8,9 @@ import java.util.List;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import se.uu.ub.cora.batchrunner.CoraClientSpy;
 import se.uu.ub.cora.clientdata.ClientDataRecord;
+import se.uu.ub.cora.indexloader.CoraClientSpy;
+import se.uu.ub.cora.indexloader.index.DataIndexerImp;
 
 public class DataIndexerTest {
 

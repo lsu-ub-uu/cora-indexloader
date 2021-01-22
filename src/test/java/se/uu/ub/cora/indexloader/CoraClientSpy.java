@@ -1,4 +1,4 @@
-package se.uu.ub.cora.batchrunner;
+package se.uu.ub.cora.indexloader;
 
 import java.util.ArrayList;
 import java.util.List;

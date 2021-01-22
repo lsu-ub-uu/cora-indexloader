@@ -16,26 +16,10 @@
  *     You should have received a copy of the GNU General Public License
  *     along with Cora.  If not, see <http://www.gnu.org/licenses/>.
  */
-package se.uu.ub.cora.batchrunner.index;
+package se.uu.ub.cora.indexloader.index;
 
-import se.uu.ub.cora.javaclient.cora.CoraClient;
+public interface DataIndexer {
 
-public class DataIndexerSpy implements DataIndexer {
-
-	public CoraClient coraClient;
-	public String indexRecordType;
-
-	public DataIndexerSpy(CoraClient coraClient) {
-		this.coraClient = coraClient;
-	}
-
-	public static DataIndexer usingCoraClient(CoraClient coraClient) {
-		return new DataIndexerSpy(coraClient);
-	}
-
-	@Override
-	public void indexDataWithRecordType(String recordType) {
-		indexRecordType = recordType;
-	}
+	void indexDataWithRecordType(String recordType);
 
 }
