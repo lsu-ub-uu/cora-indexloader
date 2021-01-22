@@ -21,14 +21,10 @@ package se.uu.ub.cora.indexloader.index;
 import java.util.List;
 
 import se.uu.ub.cora.clientdata.ClientDataRecord;
-import se.uu.ub.cora.javaclient.CoraClientConfig;
 import se.uu.ub.cora.javaclient.cora.CoraClient;
 import se.uu.ub.cora.javaclient.cora.CoraClientException;
-import se.uu.ub.cora.javaclient.cora.CoraClientFactory;
 
 public class DataIndexerImp implements DataIndexer {
-	private CoraClientFactory coraClientFactory;
-	private CoraClientConfig coraClientConfig;
 	private CoraClient coraClient;
 
 	public DataIndexerImp(CoraClient coraClient) {

@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 
 import se.uu.ub.cora.clientdata.ClientDataRecord;
 import se.uu.ub.cora.indexloader.CoraClientSpy;
-import se.uu.ub.cora.indexloader.index.DataIndexerImp;
 
 public class DataIndexerTest {
 
