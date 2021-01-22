@@ -20,8 +20,6 @@ package se.uu.ub.cora.indexloader.index;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
 
 import se.uu.ub.cora.javaclient.cora.CoraClient;
 import se.uu.ub.cora.javaclient.cora.CoraClientFactory;
@@ -29,7 +27,7 @@ import se.uu.ub.cora.javaclient.cora.CoraClientFactory;
 public class IndexerBatchRunner {
 	static DataIndexer dataIndexer;
 	static CoraClientFactory coraClientFactory;
-	static List<String> errors = new ArrayList<>();
+	// static List<String> errors = new ArrayList<>();
 
 	private IndexerBatchRunner() {
 	}
