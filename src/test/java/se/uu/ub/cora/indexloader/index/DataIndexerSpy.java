@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Uppsala University Library
+ * Copyright 2021 Uppsala University Library
  *
  * This file is part of Cora.
  *
@@ -18,7 +18,6 @@
  */
 package se.uu.ub.cora.indexloader.index;
 
-import se.uu.ub.cora.indexloader.index.DataIndexer;
 import se.uu.ub.cora.javaclient.cora.CoraClient;
 
 public class DataIndexerSpy implements DataIndexer {
