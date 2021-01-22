@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Uppsala University Library
+ * Copyright 2021 Uppsala University Library
  *
  * This file is part of Cora.
  *
@@ -21,14 +21,10 @@ package se.uu.ub.cora.indexloader.index;
 import java.util.List;
 
 import se.uu.ub.cora.clientdata.ClientDataRecord;
-import se.uu.ub.cora.javaclient.CoraClientConfig;
 import se.uu.ub.cora.javaclient.cora.CoraClient;
 import se.uu.ub.cora.javaclient.cora.CoraClientException;
-import se.uu.ub.cora.javaclient.cora.CoraClientFactory;
 
 public class DataIndexerImp implements DataIndexer {
-	private CoraClientFactory coraClientFactory;
-	private CoraClientConfig coraClientConfig;
 	private CoraClient coraClient;
 
 	public DataIndexerImp(CoraClient coraClient) {
@@ -47,14 +43,6 @@ public class DataIndexerImp implements DataIndexer {
 				System.out.println(exception.getMessage());
 			}
 		}
-	}
-
-	public CoraClientFactory getCoraClientFactory() {
-		return coraClientFactory;
-	}
-
-	public CoraClientConfig getCoraClientConfig() {
-		return coraClientConfig;
 	}
 
 	public static DataIndexerImp usingCoraClient(CoraClient coraClient) {

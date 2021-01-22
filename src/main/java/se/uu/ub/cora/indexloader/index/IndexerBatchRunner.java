@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Uppsala University Library
+ * Copyright 2021 Uppsala University Library
  *
  * This file is part of Cora.
  *
@@ -27,8 +27,8 @@ import se.uu.ub.cora.javaclient.cora.CoraClient;
 import se.uu.ub.cora.javaclient.cora.CoraClientFactory;
 
 public class IndexerBatchRunner {
-	protected static DataIndexer dataIndexer;
-	protected static CoraClientFactory coraClientFactory;
+	static DataIndexer dataIndexer;
+	static CoraClientFactory coraClientFactory;
 	static List<String> errors = new ArrayList<>();
 
 	private IndexerBatchRunner() {
