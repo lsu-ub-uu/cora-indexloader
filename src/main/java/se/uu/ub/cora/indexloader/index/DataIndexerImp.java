@@ -49,14 +49,6 @@ public class DataIndexerImp implements DataIndexer {
 		}
 	}
 
-	public CoraClientFactory getCoraClientFactory() {
-		return coraClientFactory;
-	}
-
-	public CoraClientConfig getCoraClientConfig() {
-		return coraClientConfig;
-	}
-
 	public static DataIndexerImp usingCoraClient(CoraClient coraClient) {
 		return new DataIndexerImp(coraClient);
 	}

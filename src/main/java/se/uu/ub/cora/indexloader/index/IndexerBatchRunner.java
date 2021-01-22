@@ -27,8 +27,8 @@ import se.uu.ub.cora.javaclient.cora.CoraClient;
 import se.uu.ub.cora.javaclient.cora.CoraClientFactory;
 
 public class IndexerBatchRunner {
-	protected static DataIndexer dataIndexer;
-	protected static CoraClientFactory coraClientFactory;
+	static DataIndexer dataIndexer;
+	static CoraClientFactory coraClientFactory;
 	static List<String> errors = new ArrayList<>();
 
 	private IndexerBatchRunner() {
