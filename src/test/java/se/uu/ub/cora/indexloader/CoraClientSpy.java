@@ -171,4 +171,9 @@ public class CoraClientSpy implements CoraClient {
 		return null;
 	}
 
+	@Override
+	public String removeFromIndex(String recordType, String recordId) {
+		return null;
+	}
+
 }
