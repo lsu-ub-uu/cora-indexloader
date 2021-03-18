@@ -7,7 +7,7 @@
     <parent>
         <groupId>se.uu.ub.cora</groupId>
         <artifactId>cora-parent</artifactId>
-        <version>1.1.1</version>
+        <version>1.3.0</version>
     </parent>
 
     <artifactId>indexloader</artifactId>
@@ -18,13 +18,13 @@
     <name>Indexloader</name>
 
     <properties>
-        <json.version>2.1.0</json.version>
-        <httphandler.version>2.0.0</httphandler.version>
-        <spider.version>3.13.0</spider.version>
-        <cora-clientdata.version>3.5.0</cora-clientdata.version>
-        <storage.version>3.6.0</storage.version>
-        <javaclient.version>1.8-SNAPSHOT</javaclient.version>
-        <javax.ws.rs.version>2.0.1</javax.ws.rs.version>
+        <json.version>2.2.0</json.version>
+        <httphandler.version>2.2.0</httphandler.version>
+        <spider.version>4.7.0</spider.version>
+        <cora-clientdata.version>3.7.0</cora-clientdata.version>
+        <storage.version>3.8.0</storage.version>
+        <javaclient.version>1.8.0</javaclient.version>
+        <javax.ws.rs.version>2.1.1</javax.ws.rs.version>
     </properties>
 	
 	<build>
